@@ -12,7 +12,6 @@ for age in ages:
     dct["data usage"].append(int(res["Data Usage (MB/day)"]))
 
 df = pd.DataFrame(dct)
-print(df.columns)
 plt.xlabel('Возраст')
 plt.ylabel('Потребление данных')
 plt.bar(df["age"], df["data usage"])

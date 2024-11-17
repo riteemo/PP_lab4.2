@@ -10,9 +10,7 @@ for gender in genders:
     dct["gender"].append(gender)
     dct["screen on time"].append(res["Screen On Time (hours/day)"].mean())
 
-print(dct)
 df = pd.DataFrame(dct)
-print(df.columns)
 plt.xlabel('Пол')
 plt.ylabel('Экранное время в часах')
 plt.ylim(5.2, 5.3)
